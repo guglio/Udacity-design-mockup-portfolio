@@ -3,4 +3,76 @@
  * Import this file using the following HTML or equivalent:
  * <link href="/stylesheets/screen.css" media="screen, projection" rel="stylesheet" type="text/css" /> */
 
-@import "compass/reset";
+//@import "compass/reset";
+@import "compass/css3";
+@import url('https://fonts.googleapis.com/css?family=Roboto:300,700');
+$light-blue: #02b3e4;
+$dark-blue: #2d3c49;
+$grey: #7d97ad;
+$screen_sm:450px;
+$screen_md:992px;
+$screen_lg:1200px;
+
+*{
+  box-sizing: border-box;
+}
+
+a,
+a:visited,
+a:hover,
+a:active{
+  text-decoration: none;
+  color: inherit;
+}
+
+body{
+  margin: 0;
+  padding: 0;
+  font-family: 'Roboto', sans-serif;
+}
+main,footer{
+  margin-top:2em;
+  max-width: 970px;
+}
+figure{
+  img{
+
+    margin: 0 auto;
+  }
+}
+header{
+  display: block;
+  padding:1em;
+  margin-bottom:2em;
+  border-bottom: 1px solid $grey;
+  @include transition-property(background-size);
+  @include transition-duration(0.2s);
+  @include transition-timing-function(ease);
+  @media (min-width: $screen_sm){
+      background: {
+      size: auto 70%;
+    };
+  }
+  @media (max-width: $screen_sm - 1px){
+      background: {
+        size: auto 50%;
+      };
+    }
+  background: {
+    image: image-url("udacity-logo.svg");
+    repeat: no-repeat;
+    position: center left;
+    // size: auto 70%;
+  };
+}
+figure{
+  width: 100%;
+}
+.transition-width{
+  @include transition-property(width);
+  @include transition-duration(0.2s);
+  @include transition-timing-function(ease);
+}
+.main-img{
+  margin: 0 auto;
+}
