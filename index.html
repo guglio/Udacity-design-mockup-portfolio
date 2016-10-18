@@ -8,41 +8,58 @@
 	<meta name="robots" content="" />
   <!-- Latest compiled and minified CSS -->
   <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
-  <link href="/stylesheets/screen.css" media="screen, projection" rel="stylesheet" type="text/css" />
+  <link href="/stylesheets/screen.css" media="screen" rel="stylesheet" type="text/css" />
   <link href="/stylesheets/print.css" media="print" rel="stylesheet" type="text/css" />
   <!--[if IE]>
       <link href="/stylesheets/ie.css" media="screen, projection" rel="stylesheet" type="text/css" />
   <![endif]-->
 </head>
 <body>
-  <aside>
-  </aside>
-  <main>
+  <main class="container">
     <header>
-      <img>
-      <h1>Jane Doette</h1>
-      <h3>Front-end ninja</h3>
+        <h1 class="text-uppercase text-right">Jane Doette</h1>
+        <h4 class="text-uppercase text-right">Front-end ninja</h4>
     </header>
-    <figure>
-    </figure>
-    <div class="">
-      <figure>
-        <img>
-        <figcaption>
-        </figcaption>
-      </figure>
-      <figure>
-        <img>
-        <figcaption>
-        </figcaption>
-      </figure>
-      <figure>
-        <img>
-        <figcaption>
-        </figcaption>
-      </figure>
-    </div>
+    <picture>
+      <img src="/images/center-image.jpg" class="img-responsive main-img" alt="The front end ninja code, html code">
+    </picture>
+    <section class="portfolio">
+      <h2>Featured Work</h2>
+      <div class="row">
+        <figure class="col-md-4">
+          <picture>
+            <img src="/images/appify.jpg" class="img-responsive" alt="Appify, the latest App from Udacity">
+          </picture>
+          <figcaption>
+            <h3 class="text-center">Appify</h3>
+            <p class="text-center"><a href="https://github.com/udacity/Appify/" target="_blank">https://github.com/udacity/Appify/</a></p>
+          </figcaption>
+        </figure>
+        <figure class="col-md-4">
+          <picture>
+            <img src="/images/sunflower.jpg" class="img-responsive" alt="Sunflower, the one and only greener app">
+          </picture>
+          <figcaption>
+            <h3 class="text-center">Sunflower</h3>
+            <p class="text-center"><a href="https://github.com/udacity/Sunflower/" target="_blank">https://github.com/udacity/Sunflower/</a></p>
+          </figcaption>
+        </figure>
+        <figure class="col-md-4">
+          <picture>
+            <img src="/images/bokeh.jpg" class="img-responsive" alt="Bokeh, the collection of my best out-of-focus images">
+          </picture
+          <figcaption>
+            <h3 class="text-center">Bokeh</h3>
+            <p class="text-center"><a href="https://github.com/udacity/Bokeh/" target="_blank">https://github.com/udacity/Bokeh/</a></p>
+          </figcaption>
+        </figure>
+        <!-- <picture>
+  <source media="(min-width: 1000px)" srcset="kookaburra_large_1x.jpg 1x, kookaburra_large_2x.jpg 2x">
+  <source media="(min-width: 500px)" srcset="kookaburra_medium_1x.jpg 1x, kookaburra_medium_2x.jpg 2x">
+  <img src="kookaburra_small.jpg" alt="The kookaburra: a terrestrial tree kingfisher native to Australia and New Guinea">
+</picture> -->
+      </div>
+    </section>
   </main>
-
 </body>
 </html>
