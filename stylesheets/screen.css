@@ -2,16 +2,26 @@
  * In this file you should write your main styles. (or centralize your imports)
  * Import this file using the following HTML or equivalent:
  * <link href="/stylesheets/screen.css" media="screen, projection" rel="stylesheet" type="text/css" /> */
+@import url("https://fonts.googleapis.com/css?family=Roboto:300,700");
 * {
   box-sizing: border-box;
+}
+
+a,
+a:visited,
+a:hover,
+a:active {
+  text-decoration: none;
+  color: inherit;
 }
 
 body {
   margin: 0;
   padding: 0;
+  font-family: 'Roboto', sans-serif;
 }
 
-main {
+main, footer {
   margin-top: 2em;
   max-width: 970px;
 }
@@ -72,6 +82,5 @@ figure {
 }
 
 .main-img {
-  width: 100%;
   margin: 0 auto;
 }
