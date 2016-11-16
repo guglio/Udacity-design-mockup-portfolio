@@ -47,7 +47,7 @@ header {
   -o-transition-timing-function: ease;
   -webkit-transition-timing-function: ease;
   transition-timing-function: ease;
-  background-image: url('/images/udacity-logo.svg?1476673736');
+  background-image: url('../images/udacity-logo.svg?1476673736');
   background-repeat: no-repeat;
   background-position: center left;
 }
